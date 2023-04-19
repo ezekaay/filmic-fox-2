@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: white;
+}
+
+li {
+    list-style: none;
+    list-style: none;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+.header-section {
+    height: 100vh;
+    background-image: linear-gradient(360deg, #0E1045 -21.16%, rgba(230, 1, 28, 0) 102.98%), url(./SpiderManNoWayHome.png);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    /* background: green; */
+    gap: 30px;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.navlinks {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+    margin-inline: 30px;
+}
+
+.hero-section {
+    position: relative;
+    /* background: purple; */
+    /* width: 500px; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.hero-section .hero-section__btn {
+ align-self: center;   
+ /* display: flex; */
+}
+.hero-section .hero-section__btn .primary-btn {
+    margin-right: 20px;
+}
+
+.hero-section > .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 500px;
+    /* position: absolute;
+    top: 50%;
+     */
+     /* transform: translatex(60px); */
+    /* background: blue; */
+    
+}
+
+.hero-section h1 {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 87px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-content .movie-categories button {
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    border-radius: 14px;
+    padding: 2px 6px;
+    background: none;
+    color: inherit;
+}
+
+.hero-content .movie-disc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ffffffbb;
+}
+
+.header-section .button {
+    padding: 18px 36px;
+    width: 192px;
+    height: 55px;
+    /* background: #E6011C; */
+    border-radius: 37px;
+}
+
+.header-section .hero-section__btn .primary-btn {
+    background: #E6011C;
+}
+
+.secondary-btn {
+    background: #FFFFFF;
+    color:#141126;
+     ;
+}
+
+@media screen and (max-width: 960px) {
+    .header-section {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 40px;
+        justify-content: safe;
+
+    }
+
+    .hero-section .hero-section__btn {
+        transform: translateY(-60px);
+    }
+}
+
+
+@media screen and (max-width: 620px) {
+    .header-section {
+        /* height: 100%; */
+        background-size: cover;
+        background-position: top;
+    }
+
+
+    .hero-section {
+        top: calc(70% + 68px);
+        color: #2c2c2c;
+        gap: 10px;
+        /* background: rebeccapurple; */
+        /* flex-direction: column;
+        align-items: center;
+        margin: 5px 40px;
+        justify-content: safe; */
+    }
+
+    .hero-section .hero-content h1 {
+        font-size: 35px;
+        color: #2c2c2c;
+    
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-section .hero-content p {
+        color: #2c2c2c;
+    }
+
+    .hero-section .hero-content .movie-categories button {
+        border: 1px solid #2C2C2C;
+    }
+
+
+}
